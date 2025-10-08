@@ -90,10 +90,18 @@
 			.sideby{
 			display:flex;
 			justify-content:space-between;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			gap: 20px;
+			}
+			
+			/*image*/
+			
+			sideby img{
 			max-width:100%;
 			height:auto;
-			padding-right:0px;
 			}
+			
 			
 			/*quiz button */
 			
@@ -148,6 +156,26 @@
 			max-width:1250px;
 			margin:30px auto;
 			} 
+			}
+			
+			@media screen and (max-width: 768px) {
+			.sideby {
+			flex-direction: column;
+			align-items: center;
+			}
+			.sideby ol {
+			width: 100%;
+			}
+
+			.sideby img {
+			width: 90%;
+			}
+
+			.quiz {
+			padding-left: 0;
+			margin: 20px 0;
+			}
+			
 			}
 			
 			
