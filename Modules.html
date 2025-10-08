@@ -2,28 +2,42 @@
 
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, scale=1.0" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 	<title>
 		Learning Modules
 	</title>
 
 <style>
 			body{
+			display:flex;
+			flex-direction:column;
+			overflow-x:hidden;
+			}
+	
+			html,body{
+			height:100%;
 			margin:0;
 			padding:0;
 			}
-
+			
+			.wraper{
+			background-color:#CBDCEB;
+			padding:8px;
+			}
+			
+			main{
+			flex:1;
+			}
 
 			/*navigation*/
 			nav{
+			width:100%;
 			display:flex;
 			justify-content: space-between;
 			background-color:#A1C2BD;
-			padding:8px;
+			padding:10px;
 			align-items:center;
-			border-radius:5px;
-			width-left:100%;
-			
+			border-radius:5px;	
 			}
 			
 			nav h1{		
@@ -31,45 +45,185 @@
 			font-family:Montserrat;
 			font-size:30px;
 			padding:10px;
-			padding-left:30px;
+			padding-left:40px;
 			}
 			
 			nav a{						
 			text-decoration:none;			
-			font-size:20px;
-			margin-left:10px;	
-			padding-right:10px;
+			font-size:20px;	
+			padding:20px 20px;
 			color:black;
+			border-radius:5px;
 			}
 			
 			nav a:hover{
-			text-decoration: hidden;
 			background-color:#8ecae6;
-			padding:5px;
-			border-radius:5px;
+			}
+			
+			/*modules*/
+			
+			ul a{
+			text-decoration:none;
+			line-height:25px;
+			font-size:20px;
+			color:purple;
+			}
+			
+			.basic, .intermidiate{
+			outline-color:#739EC9;
+			outline-style:inset;
+			outline-width:5px;
+			background-color:#91ADC8;
+			padding: 5px 50px;
+			}
+			
+			.advanced{
+			outline-color:#739EC9;
+			outline-style:inset;
+			outline-width:5px;
+			background-color:#91ADC8;
+			padding: 5px 40px;		
+			}
+	
+			/*sidebyimage*/
+			
+			.sideby{
+			display:flex;
+			justify-content:space-between;
+			}
+			
+			/*quiz button */
+			
+			.quiz{
+			padding-left:300px;
+			padding-top:175px;
+			margin-left:120px;
+			}
+			
+			.quiz a{
+			display:inline-block;
+			text-decoration:none;
+			background-color:#87CEEB;
+			color:black;
+			font-family:Constantia;
+			padding:20px 40px;
+			border-radius:10px;
+			}
+			
+			.quiz a:hover{
+			background-color:#ADD8E6;
+			border-radius:10px;
+			}
+			
+			/*advancequizsideby*/
+			
+			.advancequizesideby{
+			display:flex;
+			justify-content:;
 			}
 
+					
+			/*footer*/
+			
+			.footer{
+			background-color:#A1C2BD;
+			padding:10px;
+			border-radius:5px;			
+			}
+			
+			.footer a{
+			display:flex;
+			justify-content:flex-end;
+			text-decoration:underline;
+			color:black;
+			font-size:20px;
+			}
+			
+			@media screen and (min-width: 1024px) {
+			.wraper{
+			width:100%;
+			max-width:1250px;
+			margin:30px auto;
+			} 
+			}
+			
+	</style>		
+	</head>				
 
-</style>	
+
+	
 	
 <body bgcolor="#CBDCEB">
 	<nav>
 		
-		<font><i><h1>Learning Modules</h1></i></font>
-		
-		
+		<font><i><h1>Digital Hub</h1></i></font>
+
 			<div>
-			<a href="Homeindex.html">Home</a>
-			<a href="">Contact</a>
+				<a href="index.html">Home</a>
+				<a href="">Contact</a>
 			</div>	
 	</nav>
-
-
-
-</body>	
-		
 	
+<main>
+<div class="wraper">
+<font size="25px" face="georgia" color="#000B58">Learning Modules</font>
+<div class="sideby">
+
+		<ol>
+			<font face="Segoe UI">
+				<h2><li>Basics</li></h2><br>
+			</font>
+			<ul  class="basic" type="disc">
+				<li><a href="">Using Computers</a></li>
+				<li><a href="">Understanding Parts Of a Computer</a></li>
+				<li><a href="">Online Searching</a></li>
+				<li><a href="">Internet Basics</a></li>
+			</ul>
+			<font face="Segoe UI">
+				<h2><li>Intermidiate</li></h2><br>
+			</font>
+			<ul class="intermidiate" type="disc">
+				<li><a href="">Email & Online Communication</a></li>
+				<li><a href="">Productivity Tools</a></li>
+				<li><a href="">Cloud Storage</a></li>
+				<li><a href="">Social Media And Communication</a></li>
+				<li><a href="">Online Transaction</a></li>
+			</ul>
+			</ol>
+			
+<img border="5px:black;"src="interacting.jpg">	
+</div>
+			
+			
+<div class="advancequizesideby">	
+		<ol start="3">
+			<font face="Segoe UI">
+				<h2><li>Advanced</li></h2><br>
+			</font>			
+			<ul class="advanced" type="disc">
+				<li><a href="">Cybersafety</a></li>
+				<li><a href="">Web Development Basics</a></li>
+				<li><a href="">Digital Creativity And Online Job Side</a></li>
+				<li><a href="">E-Learning Platforms</a></li>
+				<li><a href="">Digital Wellbeing</a></li>
+			</ul>	
+		</ol>
+
+<div class="quiz">		
+	<a href="">Quiz</a>		
+</div>
+</div>				
 		
-	</head>	
-	
+</div>
+</main>
+
+<div class="footer">
+<footer>
+	<a href="">Contact</a>
+</footer>	
+</div>
+
+
+
+</body>		
 </html>		
