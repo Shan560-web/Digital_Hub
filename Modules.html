@@ -73,43 +73,51 @@
 			outline-color:#739EC9;
 			outline-style:inset;
 			outline-width:5px;
-			background-color:#91ADC8;
-			padding: 5px 50px;
+			background-color: #90aecd;
+			border-radius: 5px;
+			width: 320px; 		
+			padding: 15px 50px;
+			margin-left: 0px;
 			}
 			
-			.advanced{
+			.advanced {
 			outline-color:#739EC9;
 			outline-style:inset;
 			outline-width:5px;
-			background-color:#91ADC8;
-			padding: 5px 40px;		
+			background-color: #90aecd;
+			border-radius: 5px;
+			width: 320px; 		
+			padding: 15px 50px;
+			margin-left: 0px;
 			}
+		
 	
 			/*sidebyimage*/
 			
 			.sideby{
 			display:flex;
-			flex-direction:raw;
 			justify-content:space-between;
-			align-items: flex-start;
-			flex-wrap: wrap;
-			gap: 20px;
+			gap:20px
 			}
 			
 			/*image*/
 			
-			sideby img{
+			.sideby img{
+			display:flex;
+			justify-content:flex-end;
 			max-width:100%;
 			height:auto;
+			margin-top:100px;
 			}
 			
 			
 			/*quiz button */
 			
 			.quiz{
-			padding-left:300px;
-			padding-top:175px;
-			margin-left:120px;
+	        display:flex;
+			justify-content:flex-end;
+			margin-right:200px;
+			margin-top:-120px;
 			}
 			
 			.quiz a{
@@ -120,6 +128,7 @@
 			font-family:Constantia;
 			padding:20px 40px;
 			border-radius:10px;
+			font-size:15px;
 			}
 			
 			.quiz a:hover{
@@ -127,13 +136,13 @@
 			border-radius:10px;
 			}
 			
-			/*advancequizsideby*/
-			
-			.advancequizesideby{
+			ad&quiz{
 			display:flex;
-			justify-content:;
+			justify-content:space-between;
 			}
-
+			
+			
+			
 					
 			/*footer*/
 			
@@ -159,25 +168,6 @@
 			} 
 			}
 			
-			@media screen and (max-width: 768px) {
-			.sideby {
-			flex-direction: column;
-			align-items: center;
-			}
-			.sideby ol {
-			width: 100%;
-			}
-
-			.sideby img {
-			width: 90%;
-			}
-
-			.quiz {
-			padding-left: 0;
-			margin: 20px 0;
-			}
-			
-			}
 			
 			
 	</style>		
@@ -212,6 +202,8 @@
 				<li><a href="">Online Searching</a></li>
 				<li><a href="">Internet Basics</a></li>
 			</ul>
+			<pre>
+			</pre>
 			<font face="Segoe UI" color="#555555">
 				<h2><li>Intermidiate</li></h2><br>
 			</font>
@@ -228,7 +220,7 @@
 </div>
 			
 			
-<div class="advancequizesideby">	
+<div class="ad&quiz">
 		<ol start="3">
 			<font face="Segoe UI" color="#555555">
 				<h2><li>Advanced</li></h2><br>
@@ -243,12 +235,17 @@
 		</ol>
 
 <div class="quiz">		
-	<a href="">Quiz</a>		
+	<a href="">Try Quiz</a>		
 </div>
-</div>				
+</div>			
 		
 </div>
 </main>
+
+<pre>
+
+
+</pre>
 
 <div class="footer">
 <footer>
