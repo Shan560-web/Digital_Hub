@@ -8,6 +8,9 @@
 	</title>
 
 <style>
+
+			/*body, html*/
+			
 			body{
 			display:flex;
 			flex-direction:column;
@@ -20,12 +23,14 @@
 			padding:0;
 			}
 			
+			/*wraper*/
 			.wraper{
 			width:100%;
 			max-width:1250px;
 			background-color: #CBDCEB;
 			padding:8px;
 			margin:auto;
+			box-shadow: 0 0 20px rgba(0,0,0,0.2);
 			}
 			
 			main{
@@ -73,6 +78,12 @@
 			color:#333333;
 			}
 			
+			ul a:hover{
+			color:gray;
+			}
+			
+			/*outline*/
+			
 			.basic, .intermidiate{
 			outline-color:#739EC9;
 			outline-style:inset;
@@ -81,7 +92,7 @@
 			border-radius: 5px;
 			width: 320px; 		
 			padding: 15px 50px;
-			margin-left: 0px;
+			margin-left: 50px;
 			}
 			
 			.advanced {
@@ -92,7 +103,7 @@
 			border-radius: 5px;
 			width: 320px; 		
 			padding: 15px 50px;
-			margin-left: 0px;
+			margin-left: 45px;
 			}
 		
 	
@@ -165,13 +176,6 @@
 			font-size:20px;
 			margin-right:20px;
 			}
-			
-
-			
-			/* Responsive design for mobile */
-			@media screen and (max-width: 768px) {
-
-
 	
 	</style>		
 	</head>				
@@ -192,10 +196,10 @@
 	
 <main>
 <div class="wraper">
-<font size="25px" face="georgia" color="#000B58">Learning Modules</font>
+<font style="font-family:georgia; font-size:40px; color:#000B58; margin-left:50px;">Learning Modules</font>
 <div class="sideby">
 
-		<ol>
+		&nbsp<ol>
 			<font face="Segoe UI" color="#555555">
 				<h2><li>Basics</li></h2><br>
 			</font>
@@ -227,10 +231,12 @@
 			
 			
 <div class="adquiz">
-		<ol start="3">
+		<ol start="3" style="margin-left:80px;">
+		
 			<font face="Segoe UI" color="#555555">
 				<h2><li>Advanced</li></h2><br>
-			</font>			
+			</font>	
+			
 			<ul class="advanced" type="disc">
 				<li><a href="">Cybersafety</a></li>
 				<li><a href="">Web Development Basics</a></li>
