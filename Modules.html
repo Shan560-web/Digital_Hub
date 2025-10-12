@@ -84,7 +84,7 @@
 			
 			/*outline*/
 			
-			.basic, .intermidiate{
+			.basic, .intermidiate, .advanced{
 			outline-color:#739EC9;
 			outline-style:inset;
 			outline-width:5px;
@@ -95,16 +95,6 @@
 			margin-left: 50px;
 			}
 			
-			.advanced {
-			outline-color:#739EC9;
-			outline-style:inset;
-			outline-width:5px;
-			background-color: #90aecd;
-			border-radius: 5px;
-			width: 320px; 		
-			padding: 15px 50px;
-			margin-left: 45px;
-			}
 		
 	
 			/*sidebyimage*/
@@ -117,26 +107,24 @@
 			
 			/*image*/
 			
-			.sideby img{
-			display:flex;
-			justify-content:flex-end;
-			max-width:90%;
-			height:auto;
+			.img{
+			max-width: 40%;
+			height: auto;
+			border: 5px solid #333;
+			margin: 30px auto;
 			margin-top:200px;
-			margin-bottom:100px;
-			margin-right:75px;
+
 			}
-			
 			
 			/*quiz button */
 			
 			.quiz{
 	        display:flex;
-			justify-content:center;
-			margin-right:75px;
-			margin-top:30px;
-
+			justify-content:flex-end;
+			margin-right:200px;
+			margin-bottom:50px;
 			}
+				
 			
 			.quiz a{
 			display:inline-block;
@@ -154,12 +142,7 @@
 			border-radius:10px;
 			}
 			
-			.imgquiz{
-			display:flex;
-			flex-direction:column;
-			margin-bottom:90px;
-			}
-		
+
 			/*footer*/
 			
 			.footer{
@@ -180,16 +163,7 @@
 			font-size:20px;
 			margin-right:20px;
 			}
-			
-			@media(max-width:600px){
-			.sideby{
-			flex-direction:row;
-			flex-wrap:wrap;
-			}
-				
-			.sideby img{
-			margin-top:200px;
-			}
+
 	
 	</style>		
 	</head>				
@@ -239,7 +213,7 @@
 				<li><a href="">Online Transaction</a></li>	
 			</ul>
 			
-			<font face="Segoe UI" color="#555555">
+				<font face="Segoe UI" color="#555555">
 				<h2><li>Advanced</li></h2><br>
 			</font>	
 			
@@ -250,23 +224,24 @@
 				<li><a href="">E-Learning Platforms</a></li>
 				<li><a href="">Digital Wellbeing</a></li>
 			</ul>
-			</ol>
-			
-
-
+		</ol>	
 			
 			
-<div class="imgquiz">
+<img border="5px:black;"src="interacting.jpg" class="img">
 
-	<img border="5px:black;"src="interacting.jpg">	
+</div>
+
+	
+		
 
 <div class="quiz">		
 	<a href="">Try Quiz</a>		
 </div>
 
-</div>		
+
+	
 		
-</div>
+
 </main>
 
 <pre>
@@ -285,6 +260,5 @@
 
 </body>		
 </html>		
-
 
 
