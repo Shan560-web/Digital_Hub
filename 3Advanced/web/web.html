@@ -1,0 +1,428 @@
+<!Doctype html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>
+		Web Development
+	</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+
+<style>		
+		
+	* {				
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	}
+			
+	/*body*/
+			
+	body{		
+	display:flex;
+	flex-direction:column;
+	padding-top:90px;
+	line-height:1.6;
+	font-family:Arial,sans-serif;
+	height:100%;
+	}
+	
+	html{
+	height:100%;
+	}
+
+	/*wraper*/
+	.wraper{
+	width:100%;
+	max-width:1000px;
+	background-color:#E5EBED;
+	padding:30px 10px;
+	margin:auto;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	border-radius:12px;
+	border-left:5px solid #365e63;
+	margin-bottom:10px;
+	}
+
+	/*navigation*/
+			
+	.header1{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	background-color:#547D7A;
+	color:black;
+    position:fixed;
+    top: 0;
+    left: 0;			
+	padding:8px 20px;
+	align-items:center;
+	border-bottom:5px solid #1f3f42;	
+	}
+	
+	.header1 h1{
+	color:white;
+	margin:0;
+	font-family:Arial, sans-serif;
+	font-size:30px;
+	padding:8px;
+	padding-left:40px;
+	}
+			
+	nav a{					
+	color: white;
+	text-decoration:none;
+	margin-left:20px;
+	padding-right:50px;
+	font-size:20px;
+	transition:color 0.3s;
+	}
+	
+	nav a:hover{
+	color:#FFD166;
+	}
+	
+	img{
+	max-width:50%;
+	margin-bottom:12px;
+	margin-top:12px;
+	border-radius:8px;
+	border:2px solid black;
+	box-shadow:0 2px 4px rgba(0,0,0,0.3);
+	}
+	
+
+	
+	.one{
+	width:900px;
+	margin-bottom:12px;
+	margin-top:12px;
+	margin-left:30px;
+	}
+	
+	.two{
+	width:350px;
+	height:400px;
+	margin-left:30%;
+	}
+	
+	p{
+	font-size:18px;
+	margin-left:14px;
+	}
+	
+	h2{
+	color:#4A90E2; /*(blue)*/
+	}
+	
+	h3{
+	font-size:20px;
+	color:#4895ef; /*(blue)*/
+	margin-left:10px;
+	margin-bottom:10px;
+	margin-top:10px;
+	border-left:4px solid #4895ef;
+	padding-left:10px;
+	}
+	
+	h4{
+	color:#4895ef;
+	}
+	
+	ul, ol{
+	font-size:18px;
+	margin-left:60px;
+	}
+	
+	.content{
+	display:flex;
+	gap:20px;
+	}
+	
+	.content img{
+	max-width:50%;
+	margin-bottom:40px;
+	}
+	
+	
+	.frontend-heading{
+	display:flex;
+	margin-left:100px;
+	gap:38%;
+	}
+	
+	.frontend-heading-next{
+	display:flex;
+	margin-left:150px;
+	gap:40%;
+	}
+	
+	.frontend, .frontend-next{
+	margin-left:20px;
+	display:flex;
+	gap:80px;
+	max-width:80%;
+	}
+	
+	.frontend-paragraph, .frontend-paragraph-next, .backend-paragraph, .backend-paragraph-next{
+	display:flex;
+	padding:20px;
+	}
+	
+	.backend, .backend-next{
+	margin-left:20px;
+	display:flex;
+	gap:80px;
+	max-width:80%;
+	}
+	
+	.backend-heading{
+	display:flex;
+	margin-left:150px;
+	gap:40%;
+	}
+	
+	.backend-heading-next{
+	display:flex;
+	margin-left:150px;
+	gap:45%;
+	} 
+	
+
+	
+	
+
+	.server, .API{
+	display:flex;
+	}
+	
+	.collaps{
+	display:flex;
+	padding-top:10px;
+	gap:5%;
+	}
+	
+	
+	.btn{
+	display:flex;
+	justify-content:flex-end;
+	gap:60%;
+	}
+	
+	.jump-to-up a{
+	text-decoration:none;
+	color:purple;	
+	}
+	
+	.jump-to-up a:hover{
+	color:black;
+	}
+	
+	
+	.next a{
+	text-decoration:none;
+	font-size:20px;
+	background-color:#87CEEB;
+	color:black;
+	padding: 10px 20px;
+	margin-right:120px;
+	border-radius:10px;
+	transition:color 0.3s , background-color 0.3s;
+	}
+	
+	.next a:hover{
+	background-color:#ADD8E6;
+	color:#003161;
+	border-radius:10px;
+	}
+	
+	footer{
+	display:flex;
+	justify-content:flex-end;
+	width:100%;
+	bottom:0;
+	background-color:#547D7A;
+	padding:10px;
+	margin:0px;
+	border-top:5px solid #1f3f42;
+	border-radius:5px;
+	}
+	
+	footer a{
+	text-decoration:underline;
+	color:white;
+	font-size:20px;
+	margin-right:20px;
+	}
+	
+</style>				
+</head>
+
+<body bgcolor="#C9D6DA">
+		<div class="header1">
+		
+				<h1>DIGITAL HUB</h1>
+
+			<nav>
+				<a href="../../index.html">Home</a>
+				<a href="../../Modules.html">Learning Modules</a>
+			</nav>
+		</div>	
+
+<div class="wraper">
+
+<h1 style="font-family:sans-serif;color:#1E293B;"><center>Web Development</center></h1>
+
+<p>This module introduce concepts behind building modern websites and web applications. Students learn how websites work, 
+	how code is written and how different technologies combine to create interactive online experience.</p>
+
+<h2>How It Work</h2>
+
+<p>A website is collection of web pages delivered from a server to a users browser.
+	When you type a URL, the browser request pages from server and displays it using code.</p>
+<P>There is a three core technologies in website</P>
+	<center>	
+		<img src="website.jpg">
+	</center>	
+		<ul>
+			<li>HTML &rarr;       Defines the content of the page (text, images, links)</li>
+			<li>CSS &rarr;        Controls the layout, colors, fonts, and design.</li>
+			<li>JavaScript &rarr; Makes websites interactive (forms, animations, dynamic content)</li>
+		</ul>
+		
+		
+<h3>Frontend & Backend</h3>	
+<p>These two components make up the core of any modern web application, each serving a unique purpose.</p>
+<strong>Frontend is what users see and interact with on a website, like the layout, buttons and text.<br>
+	Backend is the part that works behind the scenes, handling tasks like storing data and processing requests.
+</strong>
+
+<h3><b>Frontend</b></h3>
+<p>The front end is the part of a website or app users directly interact with. It includes the layout, design and interactive elements, 
+creating a smooth and user friendly experience. It’s called the client side because it runs in the users browser.</p><br>
+
+<div class="frontend-heading">
+	<b>User Interface (UI) Design</b>
+	<b>Responsiveness</b>
+</div>
+
+<div class="frontend">
+	<img src="ui.jpg">
+	<img src="responsive.jpg">
+</div>	
+		
+<div class="frontend-paragraph">		
+	<p>Frontend development focuses on designing the look of a website, including layout, colors and interactive elements.</p>
+	<p>Ensures that websites work well on different devices and screen sizes, providing a best experience on desktops, tablets and smartphones.</p>
+</div>		
+	
+<div class="frontend-heading-next">
+	<b>Interactivity</b>
+	<b>Cross Browsers Compatibility</b>
+</div>	
+
+<div class="frontend-next">
+	<img src="interactive.png">
+	<img src="browser.jpg">
+</div>
+
+<div class="frontend-paragraph-next">
+	<p>It implements interactive features like buttons, forms, animations and dynamic content for users.</p>
+	<p>Ensures that website functions correctly in different web browsers like Chrome, Firefox and Safari.</p>
+</div>	
+
+
+
+
+
+<h4>Frontend Technologies</h4>
+<p>Frontend development use technologies to create <b><mark>user interface (UI)</mark></b> and <b><mark>user experience (UX)</mark></b>. Some of the most common frontend technologies included &darr;</p><br>
+<p><strong>HTML (Hypertext Markup Language)</strong> :<br> The standard language for creating the structure of web pages. It defines elements like headings, paragraphs, links and images.</p><br><hr>
+<p><strong>CSS (Cascading Style Sheets)</strong> :<br> Used for styling HTML elements. CSS controls the layout, colors, fonts and responsiveness of a webpage.</p><br><hr>
+<p><strong>JavaScript</strong> :<br>  A programming language that adds interactivity to the web. JavaScript is used to create dynamic content, such as forms, animations and interactive maps.</p><br><hr>
+<p><strong>Frontend Frameworks</strong> : React, Angular, Tailwind, Bootstrap and Vue.js.</p>
+<p><strong>Frontend Libraries</strong> : jQuery and SASS.</p><br><hr>
+
+<h3>Backend Development</h3>
+<p>The backend is the server side of web development. It handle data, manages storage and retrieval and ensures the frontend gets the information it needs. 
+	While users interact with the frontend, the backend works behind the scenes to manage business logic and data operations.</p>
+	
+<div class="backend-heading">
+	<b>Server Side Logic</b>
+	<b>Database Management</b>
+</div>
+
+<div class="backend">	
+	<img src="backend.png">
+	<img src="database.jpg">
+</div> 		
+	
+<div class="backend-paragraph">
+	<p>Backend development handle the server side operations, including processing data, managing application logic and handling user requests.</p>
+	<p>Manages and interacts with databases (e.g. MySQL, PostgreSQL, MongoDB) to store, retrieve and update data based on user interactions.</p>	
+</div>
+
+<div class="backend-heading-next">
+	<b>API Development</b>
+	<b>Security</b>
+</div>
+
+<div class="backend-next">
+	<img src="api.png">
+	<img src="security.jpg">	
+</div>	
+
+<div class="backend-paragraph-next">	
+	<p>Create and manage APIs (Application Programming Interfaces) to allow communication between the frontend and backend</p>
+	<p>Ensures the security of data by implementing authorization, encryption and protection against attacks like SQL injection.</p>
+</div><br><hr>
+
+
+
+<h4>Backend Technologies</h4>
+<p>Backend development use different technologies to handle the server side logic and data management. Some of the most popular backend technologies include &darr;</p><br>
+<p><strong>Programming Languages</strong> :<br> Common languages for backend development include PHP, Python, Ruby, Node.js, Java and C#.</p><br><hr>
+<p><strong>Databases</strong> :<br> Backend systems interact with databases to store and retrieve data. Popular databases include MySQL, PostgreSQL, MongoDB and SQLite.</p><br><hr>
+<p><strong>Web Servers</strong> :<br> Web servers like Apache, Nginx and IIS are used to handle HTTP requests and deliver content to users.</p><br><hr>
+<p><strong>Backend Frameworks</strong> : Django (Python), Ruby on Rails (Ruby), Express.js (Node.js) and Spring Boot (Java).</p>
+<p><strong>Backend Libraries</strong> : Mongoose, Socket.io, JDBC, Pandas.</p><br><hr><br>
+
+<p><b>Here is a code for simple welcome webpage interface including HTML, CSS and java</b></p>
+	<p>Download the three files giving you and try it your self</p>
+	<p><b><a href="https://www.mediafire.com/folder/0mhu6yrxpwt50/codes" target="_blank">Download</a></b></p><br>
+	
+	<!--add download link--!>
+	
+<p>For code a website we need a tags. These are the commonly use HTML tags</p>
+<p><b>You can download it using this link</b> &nbsp; <mark><a href="https://www.mediafire.com/file/u3n6hp6gu72qpa7/Tag.pdf/file" target="_blank">Download</a></mark></b></p>	
+
+
+<p>After coding part we can style our website using css & these are the common CSS codes</p>
+<p><b>You can download it using this link</b> &nbsp; <mark><a href="https://www.mediafire.com/file/7s96q55n7kz4xjl/css.pdf/file" target="_blank">Download</a></mark></b></p><br>
+
+
+
+<div class="btn">
+	<div class="jump-to-up">
+		<a href="web.html">Jump To Top Of Page</a>
+	</div>
+
+	<div class="next">
+		<a href="web-next.html">Next&rarr;</a>
+	</div>
+</div>
+
+
+</div>
+
+
+<!--footer-->
+
+	<footer>
+		<a href="../../Contact.html">Contact Us</a>
+		<a href="../../AboutUs.html">About Us</a>
+	</footer>	
+
+
+</body>
+</html>

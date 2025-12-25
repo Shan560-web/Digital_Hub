@@ -1,0 +1,370 @@
+<!Doctype html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>
+		Internet Of Things
+	</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+
+<style>		
+		
+	* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	}
+			
+	/*body*/
+			
+	body{		
+	display:flex;
+	flex-direction:column;
+	padding-top:90px;
+	line-height:1.6;
+	font-family:Arial,sans-serif;
+	height:100%;
+	}
+	
+	html{
+	height:100%;
+	}
+
+	/*wraper*/
+	.wraper{
+	width:100%;
+	max-width:1000px;
+	background-color:#E5EBED;
+	padding:30px 10px;
+	margin:auto;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	border-radius:12px;
+	border-left:5px solid #365e63;
+	margin-bottom:10px;
+	}
+
+	/*navigation*/
+			
+	.header1{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	background-color:#547D7A;
+	color:black;
+    position:fixed;
+    top: 0;
+    left: 0;			
+	padding:8px 20px;
+	align-items:center;
+	border-bottom:5px solid #1f3f42;	
+	}
+	
+	.header1 h1{
+	color:white;
+	margin:0;
+	font-family:Arial, sans-serif;
+	font-size:30px;
+	padding:8px;
+	padding-left:40px;
+	}
+			
+	nav a{					
+	color: white;
+	text-decoration:none;
+	margin-left:20px;
+	padding-right:50px;
+	font-size:20px;
+	transition:color 0.3s;
+	}
+	
+	nav a:hover{
+	color:#FFD166;
+	}
+	
+	table {
+	border-collapse:collapse;
+	margin-top:8px;
+	}
+	
+	th{
+	padding:5px;
+	background-color:#a0d9ef;	
+	}
+
+	td{
+	background-color:#cfecf7;
+	padding:10px;
+	font-weight:bold;
+	}	
+	
+	img{
+	max-width:50%;
+	margin-bottom:12px;
+	margin-top:12px;
+	border-radius:8px;
+	border:2px solid black;
+	box-shadow:0 2px 4px rgba(0,0,0,0.3);
+	}
+	
+	.one{
+	width:900px;
+	margin-bottom:12px;
+	margin-top:12px;
+	margin-left:30px;
+	}
+	
+	.two{
+	width:350px;
+	height:400px;
+	margin-left:30%;
+	}
+	
+	p{
+	font-size:18px;
+	margin-left:14px;
+	}
+	
+	h2{
+	color:#4A90E2; /*(blue)*/
+	}
+	
+	h3{
+	font-size:20px;
+	color:#4895ef; /*(blue)*/
+	margin-left:10px;
+	margin-bottom:10px;
+	margin-top:10px;
+	border-left:4px solid #4895ef;
+	padding-left:10px;
+	}
+	
+	h4{
+	color:#4895ef;
+	}
+	
+	ul{
+	font-size:18px;
+	margin-left:60px;
+	}
+	
+	.content{
+	display:flex;
+	gap:20px;
+	}
+	
+	.content img{
+	width:50%;
+	margin-bottom:40px;
+	}
+	
+	.collaps{
+	display:flex;
+	padding-top:10px;
+	gap:8%;
+	}
+	
+	footer{
+	display:flex;
+	justify-content:flex-end;
+	width:100%;
+	bottom:0;
+	background-color:#547D7A;
+	padding:10px;
+	margin:0px;
+	border-top:5px solid #1f3f42;
+	border-radius:5px;
+	}
+	
+	footer a{
+	text-decoration:underline;
+	color:white;
+	font-size:20px;
+	margin-right:20px;
+	}
+	
+	</style>				
+</head>
+
+<body bgcolor="#C9D6DA">
+		<div class="header1">
+		
+				<h1>DIGITAL HUB</h1>
+
+			<nav>
+				<a href="../../index.html">Home</a>
+				<a href="../../Modules.html">Learning Modules</a>
+			</nav>
+		</div>	
+
+<div class="wraper">
+
+<h1 style="font-family:sans-serif;color:#1E293B;"><center>Internet Of Things(IoT)</center></h1>
+<p>The Internet of Things (IoT) is a network of physical devices connected to the internet that can collect, share and exchange data without humans. 
+	These devices range from everyday objects like smart watches and home appliances to industrial machines and sensors.</p>
+	
+<h3>How IoT Works</h3>
+<center>
+	<img src="iot-work.webp">
+</center>
+<p>IoT devices work by collecting data from their environment using sensors like <b>temperature sensors, motion detectors or cameras.</b> 
+	Then this data sent over the internet to a server or cloud platform, where software analyzes it. Based on the analysis, the system can take automated actions or 
+	send alerts to users. For example, a <i><mark>smart thermostat can detect room temperature and adjust heating automatically, while a wearable fitness tracker monitors your steps and heart rate in real time.</mark></i></p><br>
+
+<table border="1">
+	<tr>
+		<th>Category</th>
+		<th>Example</th>
+		<th>Function</th>
+	</tr>
+	
+	<tr>
+		<td>Smart Home</td>
+		<td>Smart lights, Thermostats, Security Cameras</td>
+		<td>Control devices remotely, automate home tasks</td>
+	</tr>
+	
+	<tr>
+		<td>Wearables</td>
+		<td>Fitness trackers, Smart Watches</td>
+		<td>Monitor health metrics like steps, heart rate</td>
+	</tr>
+	
+	<tr>
+		<td>Industrial</td>
+		<td>Sensors on machines, Smart factories</td>
+		<td>Monitor machinery, prevent failures, optimize production</td>
+	</tr>
+	
+	<tr>
+		<td>Healthcare</td>
+		<td>Remote patient monitors, Smart medical devices</td>
+		<td>Track patient health, send alerts to doctors</td>
+	</tr>
+	
+	<tr>
+		<td>Agriculture</td>
+		<td>Soil sensors, Smart irrigation systems</td>
+		<td>Monitor soil moisture, automate watering</td>
+	</tr>
+	
+	<tr>
+		<td>Transportation</td>
+		<td>Connected cars, Fleet tracking devices</td>
+		<td>Track vehicles, optimize routes, improve safety</td>
+	</tr>
+
+
+</table><br>	
+
+<h3>Benefits of IoT</h3>
+<ul>
+	<li>Automation: IoT devices can perform tasks automatically, making life easier.</li>
+	<li>Real Time Monitoring: Track changes instantly (e.g. smart thermostats or industrial sensors)</li>
+	<li>Resource Optimization: Efficient use of energy, water and materials, reducing waste.</li>
+	<li>Data Driven Decisions: Provides insights for better planning and improved performance.</li>
+	<li>Improved Safety: Alerts and monitoring enhance security at home, workplaces and healthcare.</li>
+	<li>Convenience: Control devices remotely from anywhere using smartphones or computers.</li>
+</ul>
+
+<center>
+	<img src="iot-advantages.jpg">
+</center>
+
+
+<h3>Security & Privacy Considerations</h3>
+<p>IoT devices often collect sensitive data, so protecting them is important to avoid hacking and data theft. 
+	Users should follow good security practices to keep their devices and personal information safe.</p><br>
+
+<div class="collaps">
+	<p>1.Use strong, unique passwords for each device<br>
+		2.Keep devices updated with latest firmware<br>
+		3.Ensure networks use encryption (WPA2/WPA3)<br>
+		4.Limit device permissions and access<br>
+		5.Avoid connecting unknown or insecure devices<br>
+		6.Be aware of what data is collected and shared
+	</p>
+
+	<img src="iot-security.jpg">
+</div>	
+	
+<h3>Why IoT Is Important</h3>
+<p><b>The Internet of Things (IoT)</b> is important because it connects real world devices to digital systems, helping everyday life become easier and smarter. 
+	It can <u><mark>automate tasks, improve safety and reduce waste by using data to make better decisions</mark></u>. IoT is widely used in <mark><u>factories</u>, <u>hospitals and smart cities</u></mark> to 
+	help things run smoothly and solve problems faster. Learning about IoT is useful because it is becoming a big part of how technology works today and in the future.</p><br>
+
+
+<h3>AI + IoT (Artificial Intelligence with Internet of Things)</h3>
+	<p><b>AI and IoT</b> work together to create smart systems that can learn from data and make decisions on their own. While IoT collects data using <i>sensors</i>, 
+		<mark><i>AI analyzes this data to find patterns, predict outcomes and take automatic actions</i>.</mark></p><br>
+		
+	<h4>How AI Improves IoT</h4><br>	
+		<p>AI makes IoT devices smarter by helping them understand data, learn from it and make better decisions.
+			Instead of just collecting information, devices can analyze, predict and respond automatically.</p><br>
+			
+	<ul>
+		<li><mark>Better Decision Making</mark></li>	
+	</ul>		
+	
+	<p>AI processes large amounts of data and finds useful patterns.
+		This helps IoT systems make faster and more accurate decisions. <br><strong>For example ::</strong></p>	
+		<p>Sensors detect machine shaking &rarr; AI predicts future damage &rarr; maintenance is done early.</p><br>
+		
+	<ul>
+		<li><mark>Predicting Problems Before They Happen</mark></li>
+	</ul>	
+		
+	<p>AI uses data to forecast events, helping prevent failures and reduce costs. <br><strong>For example ::</strong></p>	
+		<p>AI predicts when a device will break so it can be fixed before it stops working.</p><br>	
+		
+	
+	<ul>
+		<li><mark>Increased Automation</mark></li>
+	</ul>	
+		
+	<p>AI allows IoT devices to act on their own without human help. <br><strong>For example ::</strong></p>	
+		<p>Smart lights turn on only when needed, saving energy automatically.</p><br>	
+
+	
+	<ul>
+		<li><mark>Better Safety and Security</mark></li>
+	</ul>	
+		
+	<p>AI can detect unusual behavior and respond quickly to threats. <br><strong>For example ::</strong></p>	
+		<p>A security camera recognizes a stranger and sends instant alerts.</p><br>		
+
+
+	<ul>
+		<li><mark>Personalization for Users</mark></li>
+	</ul>	
+		
+	<p>AI learns user preferences and adapts devices to their needs. <br><strong>For example ::</strong></p>	
+		<p>A smart speaker learns your music taste and gives better suggestions.</p><br>	
+	
+	<ul>
+		<li><mark>Faster and More Efficient Systems</mark></li>
+	</ul>	
+		
+	<p>AI helps systems work faster, use less energy and reduce waste.<br><br><strong>For example ::</strong></p>	
+		<p>Smart factories use AI to speed up production and cut unnecessary costs.</p><br>
+
+<h3>Why AI + IoT Important</h3>
+<p>AI + IoT is important because it makes devices <mark>smart, efficient and able to act on their own</mark>. Together, they help automate tasks, improve safety, 
+	save time and reduce costs. AI turns the data collected by IoT devices into useful insights, <b>allowing better decisions and faster responses in homes, healthcare, 
+	factories and cities.</b> Learning about AI + IoT is useful because it shows how technology is shaping the future of work, daily life and innovation.</p>
+
+
+
+</div>
+
+
+<!--footer-->
+
+	<footer>
+		<a href="../../Contact.html">Contact Us</a>
+		<a href="../../AboutUs.html">About Us</a>
+	</footer>	
+
+
+</body>
+</html>
