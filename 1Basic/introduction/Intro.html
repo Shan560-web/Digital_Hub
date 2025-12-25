@@ -1,0 +1,534 @@
+<!Doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Introduction Of A Computer</title>
+		<link rel="icon" type="image/png" href="favicon.png">
+		
+<style>
+
+	* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	}
+			
+	/*body*/
+			
+	body{		
+	display:flex;
+	flex-direction:column;
+	padding-top:90px;
+	line-height:1.5;
+	font-family:Arial,sans-serif;
+	}
+
+	/*wraper*/
+	.wraper{
+	width:100%;
+	max-width:1000px;
+	background-color:#E5EBED;
+	padding:30px 10px;
+	margin:50px auto;
+	box-shadow: 0 0 20px rgba(0,0,0,0.2);
+	border-radius:12px;
+	padding-bottom:75px;
+	}
+
+	/*navigation*/
+			
+	.header1{
+	display:flex;
+	justify-content:space-between;
+	width:100%;
+	background-color:#547D7A;
+	color:black;
+    position:fixed;
+    top: 0;
+    left: 0;			
+	padding:8px 20px;
+	align-items:center;
+	border-bottom:5px solid #1f3f42;
+	}
+	
+	.header1 h1{
+	color:white;
+	margin:0;
+	font-family:Arial, sans-serif;
+	font-size:30px;
+	padding:8px;
+	padding-left:40px;
+	}
+			
+	nav a{					
+	color: white;
+	text-decoration:none;
+	margin-left:20px;
+	padding-right:50px;
+	font-size:20px;
+	transition:color 0.3s;
+	}
+	
+	nav a:hover{
+	color:#FFD166;
+	}
+	
+	
+	h2{
+	 font-size:30px;
+	 color:#4A90E2;
+	 }
+	 
+	 .name{
+	 color:#4895ef;
+	 font-size:22px;
+	 margin-top:20px;
+	 }
+	
+	.motherboard-text{
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	gap:30px;
+	}
+	
+	.motherboard-text p{
+	text-align:center;
+	font-family:Arial;
+	font-size:20px;
+	text-height:24px;
+	}
+	
+	.motherboard-text img{
+	width:75%;
+	max-width:400px;
+	border:2px solid #000;
+	margin-bottom:8px;
+	}
+	
+	.cpu-text{
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	gap:30px;
+	}	
+	
+	.cpu-text p{
+	text-align:center;
+	font-family:Arial;
+	font-size:20px;
+	}
+	
+	.cpu-text img{
+	width:75%;
+	max-width:400px;
+	border:2px solid #000;
+	margin-bottom:8px;
+	}
+	
+	.ram-text{
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	gap:30px;
+	}
+
+	.ram-text p{
+	text-align:center;
+	font-family:Arial;
+	font-size:20px;
+	line-height:24px;
+	}
+	
+	.ram-text img{
+	width:75%;
+	max-width:400px;
+	border:2px solid #000;
+	margin-bottom:8px;
+	}
+	
+	.storage-text{
+	display:flex;
+	align-items:center;
+	justify-content:flex-start;
+	gap:30px;
+	}	
+	
+	.storage-text p{
+	text-align:center;
+	font-family:Arial;
+	font-size:20px;
+	}
+	
+	.storage-text img{
+	width:75%;
+	max-width:400px;
+	border:2px solid #000;
+	margin-bottom:8px;
+	}
+	
+	.in img{
+	border-radius:100px;
+	}
+	
+	.ou img{
+	border-radius:100px;
+	}
+	
+	
+				/*ports-one-start*/
+	.ports-one{
+	display:flex;
+	justify-content:flex-start;
+	gap:34%;
+	}
+	
+	.ports-one h3{
+	margin-left:15%;
+	}
+	
+	.ports-one-img{
+	display:flex;
+	justify-content:flex-start;
+	margin-left:12%;
+	margin-right:6%;
+	gap:50%;
+	}
+	
+	.ports-one-text{
+	display:flex;
+	justify-content:flex-start;
+	margin-left:8%;
+	margin-right:7%;
+	text-align:center;
+	gap:40%;
+	padding-bottom:20px;
+	padding-top:20px;
+	}
+				/*ports-one-end*/
+	
+				/*ports-two-start*/
+	.ports-two{
+	display:flex;
+	justify-content:flex-start;
+	gap:19%;
+	}
+	
+	.ports-two h3{
+	margin-left:8%;
+	}
+	
+	.ports-two-img{
+	display:flex;
+	justify-content:flex-start;
+	margin-left:12%;
+	margin-right:6%;
+	gap:50%;
+	}
+	
+	.ports-two-text{
+	display:flex;
+	justify-content:flex-start;
+	margin-left:10%;
+	margin-right:5%;
+	text-align:center;
+	gap:40%;
+	padding-bottom:20px;
+	padding-top:20px;
+	}	
+				/*ports-two-end*/
+	
+				/*ports-three-start*/
+	.ports-three{
+	display:flex;
+	justify-content:flex-start;
+	gap:32%;
+	}
+	
+	.ports-three h3{
+	margin-left:10%;
+	}
+	
+	.ports-three-img{
+	display:flex;
+	justify-content:flex-start;
+	margin-left:12%;
+	margin-right:6%;
+	gap:50%;
+	}
+	
+	.ports-three-text{
+	display:flex;
+	justify-content:flex-start;
+	margin-left:6%;
+	text-align:center;
+	gap:32%;
+	padding-bottom:20px;
+	padding-top:20px;
+	}			
+				/*ports-three-end*/
+	
+				/*ports-four-start*/
+	.ports-four{
+	display:flex;
+	justify-content:flex-start;
+	gap:37%;
+	}
+	
+	.ports-four h3{
+	margin-left:18%;
+	}
+	
+	.ports-four-img{
+	display:flex;
+	justify-content:flex-start;
+	margin-left:12%;
+	margin-right:6%;
+	gap:50%;
+	}
+	
+	.ports-four-text{
+	display:flex;
+	justify-content:flex-start;
+	margin-left:3%;
+	text-align:center;
+	gap:30%;
+	padding-top:20px;
+	padding-bottom:20px;
+	}			
+				/*ports-four-end*/
+	
+	
+	.btn{
+	display:flex;
+	justify-content:flex-end;
+	gap:60%;
+	}
+	
+	.jump-to-up a{
+	text-decoration:none;
+	color:purple;	
+	}
+	
+	.jump-to-up a:hover{
+	color:black;
+	}
+	
+	
+	.next a{
+	text-decoration:none;
+	font-size:20px;
+	background-color:#87CEEB;
+	color:black;
+	padding: 8px 16px;
+	margin-right:120px;
+	border-radius:10px;
+	transition:color 0.3s , background-color 0.3s;
+	}
+	
+	.next a:hover{
+	background-color:#ADD8E6;
+	color:#003161;
+	border-radius:10px;
+	}
+	
+	footer{
+	display:flex;
+	justify-content:flex-end;
+	width:100%;
+	bottom:0;
+	background-color:#547D7A;
+	padding:10px;
+	margin:0px;
+	border-radius:5px;
+	border-top:5px solid #1f3f42;
+	}
+	
+	footer a{
+	text-decoration:underline;
+	color:white;
+	font-size:20px;
+	margin-right:20px;
+	}
+	
+</style>				
+</head>
+
+<body bgcolor="#C9D6DA">
+		<div class="header1">
+		
+				<h1>DIGITAL HUB</h1>
+
+			<nav>
+				<a href="../../index.html">Home</a>
+				<a href="../../Modules.html">Learning Modules</a>
+			</nav>
+		</div>	
+
+<div class="wraper">
+
+<h1 style="font-family:sans-serif;color:#1E293B;"><center>What Is A computer?</center></h1>
+
+
+<p style="font-family:Arial;font-size:22px;">Computer is a electronic device that process data according to giving instructions.<br>
+It takes input as a raw data, after the process we can get  meaningful information and provide output or store information.</p>
+
+<center><img src="inoutpr.png" width="500px"></center>
+
+<!--start************-->
+<h2>Parts Of A Computer</h2>
+<hr style="height:5px;">
+
+<p class="name">&nbsp&nbspMotherboard:</p><br><br>
+<div class="motherboard-text">
+	<img src="motherboard.png">
+	<p>The main circuit board in a computer that allows all components to communicate with each other.The quality of the motherboard can impact performance, 
+		with more advanced boards can support fast RAM and improved smoother operation.</p>
+</div><hr>
+	
+<p class="name">&nbsp&nbspCentral Processing Unit(CPU):</p><br><br>
+<div class="cpu-text">
+	<img src="CPU.jpg">
+	<p>We call for it brain of the computer. We use Central process unit
+		(CPU) for process the input data and get information as output.<br><br>Example for CPU Manufacturers-:<br><br>Intel-i7 9700k,i9-6600f<br>Ryzen-5600X, 7700X<br>Apple-M1,A14 Bionic</p>
+</div><hr>
+
+<p class="name">&nbsp&nbspRandom Access Memory(RAM):</p><br><br>
+<div class="ram-text">
+	<img src="RAM.png">
+	<p>RAM store data  temporarily for quick access while the computer is running.The main types of RAM are <b>Dynamic RAM (DRAM) and Static RAM (SRAM)</b>.
+		DRAM is less expensive and used for main system memory. SRAM is faster than DRAM, more expensive, and used for CPU cache.</p>
+</div><hr>
+
+<p class="name">&nbsp&nbspStorage Devices:</p><br><br>
+<div class="storage-text">
+	<img src="storage.jpg">
+	<p>These are use for store data permanently. We use HDD, SSD and NVME as our storage devices.</p>
+</div>
+<!--end************-->
+
+<!---**************************-->
+<br><br><br>
+<h2>&nbsp&nbspInput Devices</h2>
+
+<div class="in">
+	<center><img src="inputdevices.jpg"></center>
+</div>
+
+
+
+<br><br><br>
+<h2>Output Devices</h2>
+<div class="ou">
+	<center><img src="outputdevices.jpg"></center>
+</div>
+<!---**************************-->
+
+<br><br><br>	
+<h2 style="margin-left:2%; padding-bottom:20px;">Type Of Ports</h2>
+
+<!--ports-one-start-->
+<div class="ports-one">
+	<h3>Serial port:<br><br></h3>
+	<h3>parallel port:<br><br></h3>
+</div>
+
+<div class="ports-one-img">
+	<img style="width:22%; height:auto;" src="serial.jpg">
+	<img style="width:22%; height:auto;" src="parallel.jpg">
+</div>
+
+
+<div class="ports-one-text">
+	<p style="font-family:Arial; font-size:18px;">A serial port connects devices like modems, and printers.<br>Today use USB for this.</p>	
+	<p style="font-family:Arial; font-size:18px;">Use for connect printer for computer. There are 25 pins.</p>
+</div>
+<hr>
+<!--ports-one-end-->
+
+<!--ports-two-start-->
+<div class="ports-two">
+	<h3>High Definition Multimedia Interface<br>(HDMI):<br><br></h3>
+	<h3>Universal Serial Bus(USB):<br><br></h3>
+</div>
+
+
+<div class="ports-two-img">
+	<img style="width:22%; height:auto;" src="hdmi.png">
+	<img style="width:22%; height:auto;" src="USB.jpg">	
+</div>
+	
+<div class="ports-two-text">
+	<p style="font-family:Arial; font-size:18px;">Used for connect devices that send and receive audio / video.</p>	
+	<p style="font-family:Arial; font-size:18px;">Transfer data and power between devices.(example: mouse/keyboard)</p>
+</div>
+<hr>
+<!--ports-two-end-->
+
+<!--ports-three-start-->
+<div class="ports-three">
+	<h3>Video Graphics Array(VGA):<br><br></h3>
+	<h3>RJ-45:<br><br></h3>
+</div>
+
+<div class="ports-three-img">
+	<img style="width:22%; height:auto;" src="VGA.jpg">
+	<img style="width:22%; height:auto;" src="RJ45.png">	
+</div>
+	
+<div class="ports-three-text">
+	<p style="font-family:Arial; font-size:18px;">Connect monitor or projector<br>to computer/laptop. There are 15 pins.</p>	
+	<p style="font-family:Arial; font-size:18px;">Connect devices to a wired network.</p>
+</div>
+<hr>
+<!--ports-three-end-->
+
+
+<!--ports-four-start-->
+<div class="ports-four">
+	<h3>PS/2:<br><br></h3>
+	<h3>Audio:<br><br></h3>
+</div>
+
+<div class="ports-four-img">
+	<img style="width:22%; height:auto;" src="PS2.jpg">
+	<img style="width:22%; height:auto;" src="sound.jpg">	
+</div>
+	
+<div class="ports-four-text">
+	<p style="font-family:Arial; font-size:18px;">Used for old devices.Now use USB for this port.<br>Green-connect mouse<br>Purple-connect keyboard</p>	
+	<p style="font-family:Arial; font-size:18px;">connect audio devices.<br>Green-speaker<br>Pink-mic<br>Blue-line in
+</p>
+</div>
+<pre>
+
+
+</pre>
+<!--ports-four-end-->
+
+<div class="btn">
+<div class="jump-to-up">
+	<a href="Intro.html">Jump To Top Of Page</a>
+</div>
+
+<div class="next">
+	<a href="Intronextone.html">Next&rarr;</a>
+</div>
+</div>
+
+
+
+</div>
+
+
+<!--footer-->
+<div class="footer">
+
+	<footer>
+		<a href="../../Contact.html">Contact Us</a>
+		<a href="../../AboutUs.html">About Us</a>
+	</footer>	
+</div>
+
+</body>
+</html>
