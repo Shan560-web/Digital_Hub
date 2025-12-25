@@ -1,0 +1,492 @@
+<!Doctype html>
+
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<title>
+		Learning Modules
+	</title>
+	<link rel="icon" type="image/png" href="favicon.png">
+
+<style>
+		
+			* {
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+			}
+			
+			/*body*/
+			
+			body{		
+			display:flex;
+			flex-direction:column;
+			padding-top:90px;
+			font-family:Arial,sans-serif;
+			line-height:1.6;
+			}
+
+			/*wraper*/
+			.wraper{
+			width:100%;
+			max-width:1000px;
+			background-color:#E5EBED;
+			padding:30px 10px;
+			margin:auto;
+			box-shadow: 0 0 20px rgba(0,0,0,0.2);
+			border-radius:12px;
+			border-left:5px solid #365e63;
+			margin-bottom:30px;
+			}
+			
+			.wraper h2{
+			color:#1E293B;
+			text-align:center;
+			font-size:30px;
+			}
+			
+		
+
+			/*navigation*/
+			
+			.header1{
+			display:flex;
+			justify-content:space-between;
+			width:100%;
+			background-color:#547D7A;
+			color:black;
+            position:fixed;
+            top: 0;
+            left: 0;			
+			padding:10px 20px;
+			align-items:center;	
+			border-bottom:5px solid #1f3f42;			
+			}
+			
+			.header1 h1{
+			color:white;
+			margin:0;
+			font-size:30px;
+			padding:8px;
+			padding-left:40px;
+			}
+			
+			nav a{						
+            color: white;
+            text-decoration:none;
+            margin-left:20px;
+			padding-right:50px;
+            font-size:20px;
+            transition:color 0.3s;
+			}
+			
+			nav a:hover{
+			color:#FFD166;
+			}
+			
+			/*quick-jump*/
+			.quick-jump{
+			display:flex;
+			gap:50px;
+			padding-top:30px;
+			padding-bottom:30px;
+			padding-left:20px;
+			background-color:#DCE0E8;
+			border-radius:10px;
+			}
+			
+			.quick-jump a{
+			text-decoration:none;
+			font-size:18px;
+			font-weight:bold;
+			color:#3B0270;
+			transition:color 0.3s;
+			}
+			
+			.quick-jump a:hover{
+			color:#6F00FF;
+			}
+
+			/*modules*/
+				
+			.module-section h3{
+            color: #0466c8;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 5px;
+			padding-top:20px;
+            border-bottom: 2px solid #94A3B8;
+			}
+
+			.module-section a{
+			display:flex;
+			margin-left:60px;
+			color:#002855;
+			text-decoration:none;
+			font-size:18px;
+			}	
+
+			.module-section img{
+			border-radius:8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+			}
+
+			.module-card-container{
+            background-color:#E6EEF6;
+            border-radius:8px;
+            padding:20px;
+            transition:border-left-color 0.3s;
+            border-left:5px solid gray; 
+			}
+			
+			/*basic*/	
+			.module-card{
+			flex:1;
+			padding:10px 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+			border-radius:8px;
+			}
+			
+			.container-one{
+			display:flex;	
+			gap:30px;
+			align-items:center;
+			}	
+			
+			.introduction a{
+			margin-left:30px;
+			}
+				
+			.container-one img{
+			width:80%;
+			height:140px;
+			margin-top:10px;
+			margin-bottom:10px;
+			margin-left:28px;
+			}
+			
+			/*Intermediate*/ 
+			.container-two{
+			display:flex;
+			justify-content:space-between;	
+			gap:30px;
+			align-items:center;
+			}
+			
+			.productivity a{
+			padding-bottom:20px;
+			}
+			
+			.cloud a{
+			padding-bottom:20px;
+			}
+			
+			.container-two img{
+			width:80%;
+			height:140px;
+			margin-top:10px;
+			margin-bottom:10px;
+			margin-left:22px;
+			}
+			
+			.container-two-next{
+			max-width:50%;
+			margin-top:20px;
+			}
+			
+			.social a{
+			margin-left:100px;
+			}
+			
+			.transaction a{
+			margin-left:150px;
+			}
+			
+			
+			/*advanced*/
+			.container-three{
+			display:flex;
+			justify-content:space-between;	
+			gap:30px;
+			align-items:center;
+			}	
+			
+			.container-three img{
+			width:80%;
+			height:140px;
+			margin-top:10px;
+			margin-bottom:10px;
+			margin-left:28px;
+			}
+			
+			.cyber a{
+			margin-left:80px;
+			}
+			
+			.iot a {
+			text-align:center;
+			}
+			
+			.webdevelopment a{
+			text-align:center;
+			}
+			
+		
+			.container-three-next{
+			display:flex;
+			margin-top:20px;
+			gap:30px;
+			align-items:center;
+			}
+
+			.container-three-next img{
+			width:80%
+			height:140px;
+			margin-top:20px;
+			margin-bottom:10px;	
+			margin-left:100px;
+			}
+			
+			.container-three-next a{
+			margin-left:140px;
+			}
+			
+			.emergin a{
+			margin-left:115px;
+			}
+		
+			.module-card p{
+			margin-left:20px;
+			font-size:14px;
+			}
+	
+			.module-card-container:hover{
+			border-left-color:red;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);  
+			}
+			
+			.next-previous{
+			display:flex;
+			justify-content:flex-end;
+			margin-right:30px;
+			}
+
+			/*quiz button */
+			
+			.quiz-btn{
+			display:flex;
+			justify-content:flex-end;
+            font-weight:700;
+            padding:12px 30px;
+            border-radius:6px;
+            font-size:10px;         
+			margin-top:20px;	
+			}
+			
+			.quiz-btn .btn{
+			text-decoration:none;
+			background-color:#4A90E2;
+			color:#f4f4f4;
+			padding:15px 25px;
+			border-radius:10px;
+			font-size:15px;	
+			box-shadow:0 5px 15px rgba(74, 144, 226, 0.4);
+			transition:color 0.5s;
+			}
+			
+			.quiz-btn .btn:hover{
+			color:#8B0000;
+			border-radius:10px;		
+			}
+			
+		
+			/*footer*/
+			
+			footer{
+			bottom:0px;
+			width:100%;
+			background-color:#547D7A;
+			padding:6px;
+			margin:0px;	
+			border-top:5px solid #1f3f42;
+			}
+			
+			footer a{
+			display:flex;
+			justify-content:flex-end;
+			text-decoration:underline;
+			color:white;
+			font-size:16px;
+			margin-right:20px;
+			}
+
+
+	</style>		
+	</head>				
+
+	
+<body bgcolor="#C9D6DA">
+	
+		<div class="header1">
+		
+				<h1>DIGITAL HUB</h1>
+
+			<nav>
+				<a href="upload.html" target="_blank">Upload Notes</a>
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLSeuEGWNZio8YdN9qXlhNj0aCTad0iA0gwcjUm6MVAadB7zF2Q/viewform?usp=dialog" target="_blank">Quiz</a>
+				<a href="index.html">Home</a>
+				<a href="AboutUs.html">About Us</a>
+			</nav>
+		</div>		
+	
+
+<div class="wraper">
+<h2>Learning Modules</h2>
+
+<h4 style="padding-left:20px;padding-top:20px;">Quick Jump</h4>
+
+<div class="quick-jump">
+	<a href="#basic">Basics</a>
+	<a href="#intermidiate">Intermediate</a>
+	<a href="#advanced">Advanced</a>
+</div>	
+
+
+
+		
+<div class="module-section">
+<section id="basic" style="padding-top:55px;"> 
+     <h3>1. Basics</h3>
+		<div class="module-card-container">
+			<div class="container-one">
+			<div class="module-card introduction">
+				<a href="1Basic/introduction/Intro.html">Introduction of a Computer</a>
+				<img src="1Basic/introduction/introductionofpc.jpg">
+				<p>A computer is an electronic device, operating under the control of instructions stored in its own memory that can accept data (input), process the data according to specified rules....<br><br></p>
+			</div>	
+			<div class="module-card internet">
+                <a href="1Basic/Internet/internet.html">Internet Basics</a>
+				<img src="1Basic/Internet/internetbasic.jpg">
+				<p>The Internet is a global network of billions of computers and other electronic devices. With the Internet, it's possible to access almost any information.....<br><br></p>
+			</div>
+			<div class="module-card searching">
+                <a href="1Basic/online-searching/onlinesearch.html">Online Searching</a>
+				<img src="1Basic/online-searching/onlinesearching.jpg">
+				<p>Online searching is the process of using a search engine or a database to find information, such as documents, images, or videos, on the internet or through electronic systems.......<br><br></p>
+			</div>	
+			</div>	
+        </div>
+</section>
+
+<div class="next-previous">
+	<a href="#intermidiate">Next</a>
+</div>
+		
+</div>
+			
+			
+		
+<div class="module-section">
+<section id="intermidiate" style="padding-top:55px;">
+     <h3>2. Intermidiate</h3>
+		<div class="module-card-container">
+			<div class="container-two">
+			<div class="module-card email">
+				<a href="2Intermidiate/email/email.html">Email & Online Communication</a>
+				<img src="2Intermidiate/email/email&communication.jpg">
+				<p>Online communication refers to the exchange of information through digital platforms, enabling individuals to interact regardless of time or location......</p>
+			</div>	
+			<div class="module-card productivity">
+				<a href="2Intermidiate/productivity/productivity.html">Productivity Tools</a>
+				<img src="2Intermidiate/productivity/productivitytools.jpg">
+				<p>Productivity tools are a type of software designed to help teams work more efficiently, streamline tasks, and collaborate effectively...........<br><br></p>
+			</div>	
+			<div class="module-card cloud">
+				<a href="2Intermidiate/cloud storage/cloud.html">Cloud Storage</a>
+				<img src="2Intermidiate/cloud storage/cloudstorage.jpg">
+				<p>Cloud Storage enables organizations to store, access, and maintain data so that they do not need to own and operate their own data centers......<br><br></p>
+			</div>	
+	
+			</div>
+		
+			<center>
+				<div class="container-two-next">
+			
+			
+				<div class="module-card transaction">
+					<a href="2Intermidiate/online transaction/transaction.html">Online Transaction</a>
+					<img src="2Intermidiate/online transaction/onlinetransaction.jpg">
+					<p>An online transaction is nothing, but an online payment method through which customers/users can pay through electronic fund transfer......<br><br></p>
+				</div>		
+			</div>
+			</center>
+		</div>
+			
+</section>	
+<div class="next-previous">
+	<a href="#basic">Previous</a>
+	<a href="#advanced">Next</a>
+</div>	
+</div>			
+			
+			
+<div class="module-section">
+<section id="advanced" style="padding-top:55px;">
+     <h3>3. Advanced</h3>
+		<div class="module-card-container">
+		<div class="container-three">
+			<div class="module-card cyber">
+				<a href="3Advanced/cyber safety/cyber.html">Cyber safety</a>
+				<img src="3Advanced/cyber safety/cybersafety.jpg">
+				<p>Cybersafety is the safe and responsible use of information and communication technology.....<br><br></p>
+			</div>	
+			<div class="module-card webdevelopment">
+				<a href="3Advanced/web/web.html">Web Development</a>
+				<img src="3Advanced/web/webbasic.webp">
+				<p>Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites.....</p>
+			</div>
+			<div class="module-card iot">
+				<a href="3Advanced/iot/iot.html">Internet of Things</a>
+				<img src="3Advanced/iot/iot.jpg">
+				<p>The Internet of Things (IoT) is a network of physical objects, from everyday appliances to industrial equipment, that are embedded with sensors......</p>
+			</div>
+			</div>
+			
+			<div class="container-three-next">
+			<div class="module-card emergin">
+				<a href="3Advanced/emergin/emergin.html">Emerging Technologies</a>
+				<img src="3Advanced/emergin/emergin.png">
+				<p>Emerging technology refers to new technologies with the potential to create significant social, economic and political impacts........<br><br></p>
+			</div>	
+			<div class="module-card welbeing">	
+				<a href="3Advanced/wellbeing/wellbeing.html">Digital Wellbeing</a>
+				<img src="3Advanced/wellbeing/digitalwelbeing.webp">
+				<p>Digital wellbeing refers to the impact of digital technologies on our physical and mental health and overall quality of life........<br><br></p>
+			</div>	
+			</div>			
+		</div>
+		
+		<div class="next-previous">
+			<a href="#intermidiate">Previous</a>
+			<a href="#basic">Jump top of the page</a>
+		</div>	
+
+		<div class="quiz-btn">
+			<a href="https://docs.google.com/forms/d/e/1FAIpQLSeuEGWNZio8YdN9qXlhNj0aCTad0iA0gwcjUm6MVAadB7zF2Q/viewform?usp=dialog" target="_blank"class="btn">Try Quiz</a>
+		</div>
+</section>
+			
+</div>	
+</div>
+
+<!--footer-->
+
+	<footer>
+		<a href="Contact.html">Contact Us</a>
+	</footer>	
+
+</body>		
+</html>		
+
+
